@@ -2,7 +2,7 @@
 
 A API Rest Nutri Info é uma solução simples que fornece informações nutricionais de alimentos. Essa API foi projetada para complementar o projeto [More Health](https://github.com/deividsilvajs/more-health), proporcionando aos usuários acesso fácil e rápido a dados nutricionais precisos.
 
-Obs1: O banco de dados está sendo simulado pelo arquivo "Database.json" a fim de ilustrar como seria o funcionamento da API.
+Obs1: O banco de dados está sendo simulado pelo arquivo "Database.ts" a fim de ilustrar como seria o funcionamento da API.
 
 Obs2: Os alimentos retornam quantias nutricionais de 100 gramas.
 
@@ -31,7 +31,7 @@ npm install
 
 ## Como usar
 
-1. Para iniciar o servidor da API abra o terminal e execute o comando "npm start" no diretório em que o repositório foi instalado.
+1. Para iniciar o servidor da API, abra o terminal e execute o comando "npx tsc" e "npm start" no diretório em que o repositório foi instalado.
 
 2. Agora basta enviar solicitações HTTP para os endpoints correspondentes. Você pode consultar a tabela de código para conhecer todos os parâmetros aceitos.
 
@@ -53,10 +53,11 @@ Aqui está um exemplo de como obter informações nutricionais para um alimento 
 
 A resposta da API fornecerá os detalhes nutricionais do alimento solicitado, como o seguinte:
 
-"ar-1-co": {
-    "nome": "arroz tipo 1 cozido",
-    "carb": 28.1,
-    "prot": 2.5,
-    "gor": 0.2,
-    "cal": 128
+{
+    nome: 'arroz tipo 1 cozido',
+    cod: 'ar-1-co',
+    carb: 28.1,
+    prot: 2.5,
+    gor: 0.2,
+    cal: 128
 }

@@ -1,4 +1,13 @@
-const alimentos: object[] = [
+interface Alimento {
+    nome: string;
+    cod: string;
+    carb: number;
+    prot: number;
+    gor: number;
+    cal: number
+}
+
+const alimentos: Alimento[] = [
     {
         nome: 'arroz tipo 1 cozido',
         cod: 'ar-1-co',
